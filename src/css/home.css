@@ -1,0 +1,49 @@
+.heading {
+    color: #fff;
+    font-family: Gilroy;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 72px;
+}
+
+.rgbset {
+    background: linear-gradient(180deg, rgba(65, 48, 62, 0), #000);
+}
+
+.componet {
+    width: 400px;
+    height: 50px;
+    border-radius: 30px;
+    border: none;
+    background-color: #eb595f;
+    color: white;
+}
+
+.componet2 {
+    width: 250px;
+    height: 50px;
+    border-radius: 30px;
+    border: none;
+    background-color: #eb595f;
+    color: white;
+}
+
+.componet3 {
+    width: 200px;
+    height: 50px;
+    border-radius: 30px;
+    border: none;
+    background-color: #eb595f;
+    color: white;
+}
+
+.btn_font {
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.font_pregara {
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 28px;
+}
