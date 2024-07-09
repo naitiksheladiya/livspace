@@ -5,12 +5,24 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-
+import img from './image/l1-type-a-page-top-banner-1-d-1614934772-2l3IR.avif'
+import img2 from './image/type-b-offering-banner-d-v1-1615197204-ruuVf.avif'
+import img3 from './image/vinviago-desk-1692623711-hHugW.avif'
 export default function Navbar2() {
 
     const [show, setShow] = useState(false);
     const [show1, setShow1] = useState(false);
     const [show2, setShow2] = useState(false);
+    const [show3, setShow3] = useState(false);
+    const [show4, setShow4] = useState(false);
+
+    const handleMouseEnter = () => {
+        setShow(true);
+    };
+
+    const handleMouseLeave = () => {
+        setShow(false);
+    };
 
     const handleMouseEnter1 = () => {
         setShow1(true);
@@ -26,12 +38,19 @@ export default function Navbar2() {
     const handleMouseLeave2 = () => {
         setShow2(false);
     };
-    const handleMouseEnter = () => {
-        setShow(true);
+    const handleMouseEnter3 = () => {
+        setShow3(true);
     };
 
-    const handleMouseLeave = () => {
-        setShow(false);
+    const handleMouseLeave3 = () => {
+        setShow3(false);
+    };
+    const handleMouseEnter4 = () => {
+        setShow4(true);
+    };
+
+    const handleMouseLeave4 = () => {
+        setShow4(false);
     };
 
     return (
@@ -236,8 +255,145 @@ export default function Navbar2() {
 
                         </Nav>
                     </Navbar.Collapse>
+
                 </Container>
             </Navbar>
+
+            <Navbar expand="lg" className="bg-body-tertiary setnav">
+                <Container>
+
+                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                    <Navbar.Collapse id="basic-navbar-nav">
+                        <Nav className="me-auto">
+                            <Nav.Link href="#home" className='font '>How it works
+                            </Nav.Link>
+                            <NavDropdown
+                                title="Offerings"
+                                id="basic-nav-dropdown1"
+                                className='font'
+                                show={show3}
+                                onMouseEnter={handleMouseEnter3}
+                                onMouseLeave={handleMouseLeave3}
+                            >
+
+                                <div className='box2'>
+                                    <div className='row'>
+
+                                        <div className='col-lg-6 col-sm-6 col-md-6'>
+                                            <p className='size'>EXPLORE OFFERINGS</p>
+                                            <div className='round mt-3'>
+                                                <div className='row setcenter'>
+                                                    <div className='col-lg-4 col-md-4 col-sm-4 responsive'>
+                                                        <img className='img2 ' src={img} />
+                                                    </div>
+                                                    <div className='col-lg-8 col-md-8 col-sm-8 responsive'>
+                                                        <p className='subtitle_default'> Modular Interiors</p>
+                                                        <p className='subtitle_default1'> Kitchens, wardrobes and storage  </p>
+
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className='round mt-3'>
+                                                <div className='row setcenter'>
+                                                    <div className='col-lg-4 col-md-4 col-sm-4 responsive'>
+                                                        <img className='img2' src={img2} />
+                                                    </div>
+                                                    <div className='col-lg-8 col-md-8 col-sm-8 responsive'>
+                                                        <p className='subtitle_default'>
+                                                            Full Home Interiors
+                                                        </p>
+                                                        <p className='subtitle_default1'>
+                                                            End-to-end home interiors
+                                                        </p>
+
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className='round mt-3'>
+                                                <div className='row setcenter'>
+                                                    <div className='col-lg-4 col-md-4 col-sm-4 responsive'>
+                                                        <img className='img2 ' src={img3} />
+                                                    </div>
+                                                    <div className='col-lg-8 col-md-8 col-sm-8 responsive '>
+                                                        <p className='subtitle_default'>
+                                                            Luxury interiors
+                                                        </p>
+                                                        <p className='subtitle_default1'>
+                                                            Homes that redefine elegance
+                                                        </p>
+
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className='col-lg-3 col-sm-3 col-md-3 mt-3'>
+                                            <p className='size' >KITCHEN</p>
+                                            <li className='linkset'>
+                                                Know Your Kitchen
+                                            </li>
+                                            <li className='linkset'>
+                                                Kitchen Price Calculator
+                                            </li>
+                                            <li className='linkset'>
+                                                Kitchen Components
+                                            </li>
+                                        </div>
+                                        <div className='col-lg-3 col-sm-3 col-md-3 mt-3'>
+                                            <p className='size'>WARDROBE</p>
+                                            <li className='linkset'>
+                                                Know Your Wardrobe
+                                            </li>
+                                            <li className='linkset'>
+                                                Wardrobe Price Calculator
+                                            </li>
+                                            <li className='linkset'>
+                                                Wardrobe Components
+                                            </li>
+                                        </div>
+                                    </div>
+                                </div>
+                            </NavDropdown>
+
+                            <NavDropdown
+                                title="Price Calculators"
+                                id="basic-nav-dropdown1"
+                                className='font'
+                                show={show4}
+                                onMouseEnter={handleMouseEnter4}
+                                onMouseLeave={handleMouseLeave4}
+                            >
+
+                                <div className='box'>
+                                    <div className='row'>
+                                        <div className='col-lg-6 col-sm-6 col-md-6'>
+                                            <li className='linkset'>
+                                                Home Interior Price Calculator
+                                            </li>
+                                            <li className='linkset'>
+                                                Kitchen Price Calculator
+                                            </li>
+                                            <li className='linkset'>
+                                                Wardrobe Price Calculator
+                                            </li>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </NavDropdown>
+                            <Nav.Link href="#home" className='font '>The Modular Journey
+                            </Nav.Link>
+                            <Nav.Link href="#home" className='font '>Refer a Friend
+                            </Nav.Link>
+                            <Nav.Link href="#home" className='font '>Partner with us
+                            </Nav.Link>
+                        </Nav>
+                    </Navbar.Collapse>
+                </Container>
+            </Navbar>
+
         </>
     )
 }
