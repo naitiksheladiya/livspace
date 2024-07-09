@@ -1,0 +1,138 @@
+body {
+    font-family: 'Arial, sans-serif';
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+.container {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.breadcrumb {
+    color: #c0272d;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 36px;
+    margin: 20px 0;
+    color: #3e3e3e;
+}
+
+
+
+.step {
+    flex: 1 1 calc(20% - 10px);
+    margin: 5px;
+    text-align: center;
+}
+
+.step img {
+    max-width: 100%;
+    height: auto;
+}
+
+.step p {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #3e3e3e;
+}
+
+.start-button {
+    background-color: #ff5d5d;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.start-button:hover {
+    background-color: #ff4242;
+}
+
+.App {
+    font-family: sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+.process-flow {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.step {
+    gap: 10px;
+    flex: 1 1 150px;
+    max-width: 75px;
+}
+
+.circle {
+    width: 80px;
+    height: 80px;
+    background-color: #f5f5f5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle img {
+    max-width: 80px;
+    max-height: 80px;
+    border-radius: 50%;
+}
+
+.label {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.title {
+    font-size: 17px;
+    color: #333;
+    width: 165px;
+    position: relative;
+    left: -47px;
+}
+
+.arrow {
+    background-image: url(./images/pointer-1648009636-hrGLD.svg);
+    background-repeat: no-repeat;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    flex: 0 0 70px;
+    height: 50px;
+}
+
+@media (max-width: 768px) {
+    .process-flow {
+        flex-direction: column;
+    }
+
+    .arrow {
+        display: none;
+    }
+}
+
+
+.oneone {
+    position: relative;
+    bottom: -6px;
+    left: 13px;
+    font-family: "Gilroy";
+    font-size: 35px;
+    line-height: 42px;
+    color: var(--on-background-100);
+    opacity: .3;
+    font-weight: 900;
+}
