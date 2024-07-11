@@ -1,0 +1,232 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 48px;
+}
+
+.autotext {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+.text-container {
+    display: inline-flex;
+    flex-direction: column;
+    height: 2.5rem;
+    overflow: hidden;
+    line-height: 2.5rem;
+}
+
+.font_wr {
+    display: inline-block;
+    font-size: 1.1rem;
+    margin-top: 0;
+    font-weight: 500;
+}
+
+
+.text-container span {
+    height: 2.3rem;
+    color: lightcoral;
+    animation: moveUp 10s linear infinite;
+    margin-left: 10px;
+}
+
+@keyframes moveUp {
+    0% {
+        transform: translateY(0);
+    }
+
+    5% {
+        transform: translateY(0);
+    }
+
+    15% {
+        transform: translateY(-2.3rem);
+    }
+
+    25% {
+        transform: translateY(-2.3rem);
+    }
+
+    35% {
+        transform: translateY(-4.6rem);
+    }
+
+    45% {
+        transform: translateY(-4.6rem);
+    }
+
+    55% {
+        transform: translateY(-6.9rem);
+    }
+
+
+    65% {
+        transform: translateY(-6.9rem);
+    }
+
+    75% {
+        transform: translateY(-9.2rem);
+    }
+
+    95% {
+        transform: translateY(-9.2rem);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.pregara_size {
+    font-size: 0.5rem;
+    margin-top: -30px;
+}
+
+.Calculate {
+    width: 420px;
+    height: auto;
+    border: 2px solid red;
+
+    margin-left: 20px;
+    border-radius: 20px;
+    margin-top: 15px;
+
+}
+
+.img_logo_box {
+    margin-left: 158px;
+}
+
+.fulltext {
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.icon_flex {
+    display: flex;
+
+}
+
+.fulltext1 {
+    font-size: 0.4rem;
+    margin-top: -45px;
+    font-weight: 400;
+}
+
+
+
+@media screen and (max-width:1400px) {
+    .Calculate {
+
+        width: 345px;
+        height: auto;
+        border: 2px solid red;
+        margin-left: 20px;
+        border-radius: 20px;
+        margin-top: 15px;
+    }
+
+    .control {
+        display: flex;
+        justify-content: center;
+    }
+
+    .img_logo_box {
+        margin-left: 110px;
+    }
+
+    .fulltext {
+        font-size: 0.6rem;
+        font-weight: 500;
+    }
+
+}
+
+@media screen and (max-width:990px) {
+    .Calculate {
+
+        width: 340px;
+        height: auto;
+        border: 2px solid red;
+        border-radius: 20px;
+        margin-top: 15px;
+
+
+    }
+
+    .font_wr {
+        display: inline-block;
+        font-size: 0.8rem;
+        margin-top: 0;
+        font-weight: 500;
+    }
+
+    .pregara_size {
+        font-size: 0.4rem;
+        margin-top: -30px;
+        font-weight: 500;
+    }
+
+    .img_logo_box {
+        margin-left: 110px;
+    }
+
+    .fulltext {
+        font-size: 0.6rem;
+        font-weight: 500;
+    }
+
+    .control {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:770px) {
+    .font_wr {
+        display: inline-block;
+        font-size: 50px;
+        margin-top: 0;
+        font-weight: 600;
+    }
+}
+
+@media screen and (max-width:515px) {
+    .font_wr {
+        display: inline-block;
+        font-size: 37px;
+        margin-top: 0;
+        font-weight: 600;
+    }
+
+    .pregara_size {
+        font-size: 20px;
+        margin-top: -30px;
+        font-weight: 500;
+    }
+}
+
+@media screen and (max-width:405px) {
+    .font_wr {
+        display: inline-block;
+        font-size: 30px;
+        margin-top: 0;
+        font-weight: 600;
+    }
+
+    .pregara_size {
+        font-size: 15px;
+        margin-top: -30px;
+        font-weight: 500;
+    }
+}
