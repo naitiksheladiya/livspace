@@ -9,7 +9,7 @@ import step5 from './images/image-109-4-1647859971-zjq4j.png';
 const Dream = () => {
     return (
         <>
-            <div className="container">
+            <div className="container2">
                 <nav className="breadcrumb">
                     Home / Interiors / How it works
                 </nav>

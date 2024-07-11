@@ -44,17 +44,39 @@
     margin-top: 10px;
 }
 
+.box2 {
+    width: 900px;
+    padding: 20px;
+}
+
 @media screen and (max-width:770px) {
     .box {
         width: auto;
         padding: 20px;
         border-radius: 20px;
     }
+
+    .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .box2 {
+        width: auto;
+        padding: 20px;
+    }
+
+    .setcenter {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
 }
 
 .setnav {
     width: 100%;
-    height: 80px;
+    height: auto;
     box-shadow: 14px 8px 18px -3px grey
 }
 
@@ -78,6 +100,9 @@
         border-radius: .25rem;
         margin-left: -190px !important;
     }
+
+
+
 }
 
 @media screen and (max-width:990px) {
@@ -101,10 +126,23 @@
         margin-left: 0px !important;
     }
 
+    .row {
+        display: flex;
+        flex-direction: column;
+    }
+
     .box2 {
         width: auto;
         padding: 20px;
     }
+
+    .setcenter {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+
 }
 
 .navbar-nav {
@@ -124,12 +162,64 @@
         list-style: none;
         margin-top: 20px;
     }
+
+    .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .box2 {
+        width: auto;
+        padding: 20px;
+    }
+
+    .setcenter {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
 }
 
-.box2 {
-    width: 1000px;
-    padding: 20px;
+@media screen and (max-width:400px) {
+    .navbar-nav {
+        display: flex;
+        flex-direction: column;
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+        margin-top: 20px;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .box2 {
+        width: auto;
+        padding: 20px;
+    }
+
+    .setcenter {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .round {
+        width: 220px !important;
+        height: auto;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f2f2f2;
+        padding: 10px;
+    }
 }
+
 
 .round {
 

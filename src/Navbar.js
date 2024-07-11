@@ -8,6 +8,10 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import img from './image/l1-type-a-page-top-banner-1-d-1614934772-2l3IR.avif'
 import img2 from './image/type-b-offering-banner-d-v1-1615197204-ruuVf.avif'
 import img3 from './image/vinviago-desk-1692623711-hHugW.avif'
+import {BottomNavigation} from 'reactjs-bottom-navigation'
+// import 'reactjs-bottom-navigation/dist/index.css'
+import { BellOutlined, HomeOutlined, MenuFoldOutlined, SearchOutlined } from '@ant-design/icons';
+// import Gridview from './Gridview';
 export default function Navbar2() {
 
     const [show, setShow] = useState(false);
@@ -53,8 +57,43 @@ export default function Navbar2() {
         setShow4(false);
     };
 
+
+    // const images1 = [
+    //     { src: 'https://via.placeholder.com/150', alt: 'Placeholder 1' },
+    //     { src: 'https://via.placeholder.com/150', alt: 'Placeholder 2' },
+    //     { src: 'https://via.placeholder.com/150', alt: 'Placeholder 3' },
+    //     { src: 'https://via.placeholder.com/150', alt: 'Placeholder 4' },
+    //     { src: 'https://via.placeholder.com/150', alt: 'Placeholder 5' },
+    //     // Add more images as needed
+    // ];
+
+    const bottomNavItems = [
+        {
+            title: 'Home',
+            icon: <HomeOutlined style={{ fontSize: '18px' }} />,
+            activeIcon: <HomeOutlined style={{ fontSize: '18px', color: '#fff' }} />
+        },
+        {
+            title: 'Search',
+            icon: <SearchOutlined style={{ fontSize: '18px' }} />,
+            activeIcon: <SearchOutlined style={{ fontSize: '18px', color: '#fff' }} />
+        },
+        {
+            title: 'Notifications',
+            icon: <BellOutlined style={{ fontSize: '18px' }} />,
+            activeIcon: <BellOutlined style={{ fontSize: '18px', color: '#fff' }} />
+        },
+        {
+            title: 'Menu',
+            icon: < MenuFoldOutlined style={{ fontSize: '18px' }} />,
+            activeIcon: <MenuFoldOutlined style={{ fontSize: '18px', color: '#fff' }} />,
+            onClick: () => alert('menu clicked')
+        }
+    ]
+
     return (
         <>
+            {/* <Gridview images={images1} /> */}
             <Navbar expand="lg" className="bg-body-tertiary setnav">
                 <Container>
                     <Navbar.Brand href="#home"><img className='img' src={logo} /></Navbar.Brand>
@@ -211,9 +250,6 @@ export default function Navbar2() {
                                         </div>
                                     </div>
                                 </div>
-
-
-
 
 
                             </NavDropdown>
@@ -393,6 +429,15 @@ export default function Navbar2() {
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
+
+
+            <div>
+                <BottomNavigation
+                    items={bottomNavItems}
+                    defaultSelected={0}
+                    onItemClick={(item) => console.log(item)}
+                />
+            </div>
 
         </>
     )

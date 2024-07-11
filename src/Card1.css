@@ -27,7 +27,7 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    padding: 0px 40px 20px 40px;
+    padding: 0px 200px 20px 200px;
 }
 
 .card {
@@ -87,4 +87,42 @@
 .okhover {
     background: transparent;
     border: none;
+}
+
+@media screen and (max-width:1090px) {
+    .card-container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 0px 100px 20px 100px;
+    }
+}
+
+
+@media screen and (max-width:1090px) {
+    .card-container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 0px 10px 20px 10px;
+    }
+}
+
+@media screen and (max-width:1690px) {
+    .card-container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 0px 30px 20px 30px;
+    }
+}
+
+
+@media screen and (max-width:1690px) {
+    .card-container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 0px 0px 20px 0px;
+    }
 }
