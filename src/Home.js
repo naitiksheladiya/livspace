@@ -10,6 +10,7 @@ export default function Home() {
             <Carousel>
                 <Carousel.Item interval={1500}>
                     < img className='rgbset' src={homepage} />
+        
                     <Carousel.Caption>
                         <h2 className='heading'>
                             Home to beautiful interiors
